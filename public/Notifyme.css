@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200&display=swap');
+
+
+/*mobile desktop view media query*/
+@media  (min-width: 768px) and (max-width: 1000px) {  
+  
+ .mainDiv .homeImage{ 
+   height:50vh; 
+   width: 100vw;}
+   
+  .mainDiv header{  
+  height: 50vh;   
+}
+  
+  .mainDiv .logotext{ 
+    font-size: 50px; 
+  } 
+  .commonMidNav{ 
+    font-size: 10px;
+  } 
+  .login,.signup{ width: 10px; } 
+  
+ .mainDiv .secondDiv h2{ 
+    font-size: 40px ;
+}
+ 
+ .mainDiv .secondDiv p{ 
+    font-size: 20px ;
+} 
+.mainDiv .searchBar button[type=submit]{ 
+  padding: 5px 12px; 
+}
+ 
+ .mainDiv .searchBar input[type=text]{ 
+  width: 50vw; 
+  border-radius: 3px 0 0 3px; 
+  border:none;
+}  
+
+.aboutDiv{ 
+  justify-content: center; 
+  padding: 0; 
+  margin: 0; 
+  text-align:center ;
+} 
+  
+.mainDiv .aboutDiv p{ 
+  width: 70vw;  
+  margin-bottom:150px ;
+  }
+.mainDiv .aboutDiv h1{ 
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+  margin-top:20px ;
+  }  
+  
+  .mainDiv .footerDiv .icons{ 
+    margin-top: 155px;   
+  } 
+ 
+ .mainDiv .footerDiv .feedback{   
+   padding: 20px 15px 20px;
+   height: 50vh;
+   top: -40%; 
+   left: 80px;  
+ } 
+ 
+
+  
+.mainDiv .footerDiv .feedback input{
+    width: 55vw; 
+    margin-bottom: 10px;
+  }  
+  
+ .mainDiv .footerDiv .feedback textarea{  
+   width: 55vw; 
+   height: 12vh;
+   margin-bottom: 14px; 
+ }  
+ 
+ .mainDiv .footerDiv{ 
+   padding: 50px 10px 0px;
+    margin-top:1vh;  
+ } 
+
+.mainDiv .footerDiv .icons{ 
+   font-size: 8px;
+} 
+.mainDiv .footerDiv .copyrightPara{ 
+  font-size: 8px;}  
+  
+  .feedback button{  
+    font-size: 12px;
+    padding: 4px 15px;  
+   }
+  
+.mainDiv .midNavBar{   
+ width: 250px;
+ flex-wrap: wrap; 
+} 
+
+.mainDiv .midNavBar a{ 
+  font-size: 17px;
+}
+
+ .mainDiv header .navBar .signup{   
+  font-size: 15px;
+  padding: 5px 10px; 
+  width: 80px; 
+  margin: 0;
+} 
+
+.mainDiv header .navBar .login {   
+   font-size: 15px;
+  padding: 5px 10px; 
+  width: 80px; 
+  margin-right: 2px;  
+  margin: 0;
+}  
+
+}
+
+
+
+
+
+
+/*mobile small view media query */
+@media (max-width: 768px) { 
+  .mainDiv .logotext{ 
+    font-size: 20px; 
+    color:red;
+  } 
+  .commonMidNav{ 
+    font-size: 10px;
+  } 
+  .login,.signup{ width: 15px; height :9px;}
+ .mainDiv .secondDiv h2{ 
+    font-size: 40px ;
+}
+ 
+ .mainDiv .secondDiv p{ 
+    font-size: 20px ;
+} 
+.mainDiv .searchBar button[type=submit]{ 
+  padding: 5px 12px; 
+}
+ 
+ .mainDiv .searchBar input[type=text]{ 
+  width: 50vw; 
+  border-radius: 3px 0 0 3px; 
+  border:none;
+} 
+.aboutDiv{ 
+  justify-content: center; 
+  padding: 0; 
+  margin: 0; 
+  text-align:center ;
+} 
+  
+.mainDiv .aboutDiv p{ 
+  width: 70vw;  
+  margin-bottom:150px ;
+  }
+.mainDiv .aboutDiv h1{ 
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+  margin-top:20px ;
+  } 
+  .mainDiv .footerDiv .icons{ 
+    margin-top: 155px;   
+  } 
+ 
+ .mainDiv .footerDiv .feedback{   
+   padding: 20px 15px 20px;
+   height: 50vh;
+   top: -40%; 
+   left: 80px;  
+ } 
+ 
+
+  
+.mainDiv .footerDiv .feedback input{
+    width: 55vw; 
+    margin-bottom: 10px;
+  }  
+  
+ .mainDiv .footerDiv .feedback textarea{  
+   width: 55vw; 
+   height: 12vh;
+   margin-bottom: 14px; 
+ }  
+ 
+ .mainDiv .footerDiv{ 
+   padding: 50px 10px 0px;
+    margin-top:1vh;  
+ } 
+
+.mainDiv .footerDiv .icons{ 
+   font-size: 8px;
+} 
+.mainDiv .footerDiv .copyrightPara{ 
+  font-size: 8px;}  
+  
+  .feedback button{  
+    font-size: 12px;
+    padding: 4px 15px;  
+   }
+  
+.mainDiv .midNavBar{   
+ width: 95px;
+ flex-wrap: wrap;
+} 
+
+ .mainDiv header .navBar .signup{   
+   font-size: 10px;
+  padding: 2px 7px; 
+  width: 40px; 
+  margin: 0;
+} 
+
+.mainDiv header .navBar .login {   
+  font-size: 10px;
+  padding: 2px 7px;
+  margin-right: 2px;  
+  width: 40px; 
+  margin: 0;
+}  
+
+}
+
+
+/****real css is here ******/
+
+*{ 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+  /* font-family: 'Klee One', cursive; */
+  scroll-behavior: smooth; 
+} 
+
+:root { 
+  --homeimagecolor : #fee242;
+} 
+ 
+body{
+  scroll-behavior: smooth; 
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+ p{ 
+   line-height: 1.5rem;
+ }
+ 
+h1,h2,h3,h4{ 
+  font-family: 'Nunito', sans-serif;
+}
+
+.mainDiv ul a{ 
+  text-decoration: none; 
+  color: black;  
+  font-family: 'Nunito', sans-serif;
+}  
+
+a:active,a:visited,a:focus{ 
+  text-decoration: none;
+} 
+
+.homeImage{
+  width: 100vw;
+  height: 100vh; 
+  position: absolute; 
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  filter: blur(2px);
+  /* -webkit-filter: blur(8px); */
+}
+
+header{  
+  background-repeat: no-repeat; 
+  height: 100vh;   
+  display: flex;
+  justify-content: center; 
+  flex-wrap:wrap; 
+  z-index: 1;
+}
+   
+.navBar{  
+  display: flex; 
+  justify-content: space-between;  
+  align-items: center;
+  padding: 10px 20px 0px; 
+  width:100vw; 
+  height: 70px;
+} 
+
+.midNavBar{  
+   display: flex; 
+   width: 20vw; 
+   justify-content: space-between;
+}
+
+.commonMidNav
+{ 
+  font-weight: bold;
+}
+
+
+.login {  
+ padding: 5px 12px;
+  border: 1px solid black; 
+  margin-right: 3px; 
+  transition: all 0.3s linear; 
+}  
+.login:hover{  
+  color:white;
+  background-color:#374045; 
+} 
+
+.signup{  
+  padding: 5px 10px;
+  background-color: #374045; 
+  border: 1px solid black; 
+  color: white; 
+}
+
+.logotext {  
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Palette Mosaic', cursive;
+}
+
+.navBar form{ 
+  padding: 0; 
+  margin: 0; 
+  height: auto; 
+  width: auto;
+}
+
+.secondDiv{  
+  width: 60vw; 
+  text-align: center; 
+}
+
+.secondDiv h2{
+  font-size: 80px; 
+  font-family: 'Anton', sans-serif; 
+  font-weight: 900;  
+  margin-bottom: 3vh;
+}
+
+.secondDiv p{
+  font-size: 25px; 
+}
+
+.searchBar{
+  display: flex; 
+  justify-content: center; 
+  margin-top: 5vh; 
+  margin-bottom: 7vh;
+} 
+
+.searchBar input[type=text]{  
+  border: none;  
+  border-radius:3px 0 0 3px;
+  width: 35vw;}
+
+ .searchBar button[type=submit]{ 
+    padding: 7px 40px; 
+    background-color: #334756; 
+    border: none; 
+    border-radius:0 3px 3px 0; 
+    color: #000000; 
+    font-weight: bold; 
+    border:none;
+  } 
+  
+  .newsBlocks{ 
+    display: grid; 
+    grid-template-rows: repeat(2,330px); 
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    grid-auto-rows: 330px; 
+    grid-gap:20px 20px; 
+    margin: 10px 15px 10px; 
+    background-color: #EEEEEE; 
+    padding-bottom: 40px;
+  }
+  
+  .commonNews{ 
+   position: relative; 
+  } 
+  .extraDiv{
+    height: 70%;
+    width: 100%;
+    overflow: hidden;  
+    position: absolute;
+    left: 0;
+    top: 0; 
+    border-radius: 5%;
+  }
+  .newsImage{ 
+    position: absolute;
+    right: -25%;
+    bottom: -25%; 
+    left: 0;
+    top:0;
+    width:100%; 
+    height: auto;  
+
+  } 
+  
+  .newsHeading 
+  {  
+    position: absolute;
+    left: 2px; 
+    top:70%; 
+    font-weight: 900; 
+    /* color: #423F3E; */
+    color: black;
+    /* overflow: scroll;
+    white-space: nowrap; */
+  }
+  
+  .newsFeedText{ 
+    margin: 0px 15px 25px; 
+    font-weight: bold;
+  }
+  
+  .newsFeeds span 
+  { 
+    color:#73c2e8 ; 
+    font-family: 'Nunito', sans-serif;
+  } 
+
+  .newsFeeds{
+    background-color: #EEEEEE;  
+    padding-top: 40px;
+  }
+
+.aboutDiv{  
+    display:flex; 
+    background-color:#ffffff; 
+    justify-content: space-around; 
+    align-items: center; 
+    margin-top: 5vh; 
+    flex-wrap: wrap;  
+    padding-top: 10vh;
+  }  
+ 
+ .aboutDiv img{
+    height: 250px; 
+    width: auto;  
+    margin-left: 0 !important;
+  } 
+ 
+  .aboutDiv p{ 
+  width: 40vw;
+  } 
+  
+  .aboutDiv h1{ 
+  width: 40vw; 
+  text-align: center; 
+  } 
+   
+   
+  .footerDiv{
+    background-color: #334756;  
+    padding: 50px 10px 5px;
+    display: grid; 
+    grid-template-rows: repeat(3,auto); 
+    grid-template-columns: repeat(1,auto); 
+    justify-items: center;
+    margin-top:40vh;  
+    position: relative;
+  } 
+  
+  .feedback{  
+   border: none;
+   background-color:white; 
+   padding: 25px 20px 30px; 
+   display: inline-block; 
+   margin: 0 auto; 
+   border-radius: 7px; 
+   height: 43vh;  
+   position: absolute;
+   top: -47%; 
+   left: 33%; 
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; 
+   border: 1px solid black;
+  } 
+  
+  .feedback input{ 
+    display: block;  
+    width: 30vw; 
+    margin-bottom: 10px; 
+    border: 1px solid black; 
+    border-radius:3px;
+  }  
+  
+   input::placeholder{ 
+     color: #687980;} 
+     textarea::placeholder{ 
+     color: #687980;}
+  
+ .feedback textarea{  
+   border: 1px solid black;
+   display: block; 
+   width: 30vw; 
+   height: 15vh;
+   margin-bottom: 14px; 
+   border-radius: 5px; 
+   color:#687980 ;
+ } 
+ 
+  .feedback button{ 
+    padding: 7px 25px;  
+    border: none; 
+    color: white; 
+    background-color: #334756; 
+    border-radius: 5px;
+   }
+   
+   .footerDiv .feedback p{ 
+     font-family: 'Nunito', sans-serif;
+     margin-bottom: 25px; 
+   }  
+   
+  .footerDiv .icons{ 
+    font-family: 'Nunito', sans-serif;
+    color: white; 
+    margin-top: 23vh;  
+    margin-bottom: 10px; 
+    font-size: 10px;
+  } 
+  
+.mainDiv .footerDiv .icons span{ 
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin: 0 6px; }
+   
+  .footerDiv .copyrightPara{ 
+    font-family: 'Nunito', sans-serif;
+    color: white;  
+    font-size: 10px;
+  }
+  
+#logo{
+  text-decoration: none;
+  color: black;
+}
