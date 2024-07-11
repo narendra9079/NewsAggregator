@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="" content="">
+    <title>Notifyme</title> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">  
+     
+        <script
+      src="https://kit.fontawesome.com/43dcc20e7a.js"
+      crossorigin="anonymous"
+    ></script>
+     
+    <link rel="stylesheet" href="Notifyme.css"  />
+  </head>
+  <body id="home">
+    <div class="mainDiv">
+      <img class="homeImage" src="taras-shypka-iFSvn82XfGo-unsplash.jpg" alt="">
+      <header>
+        <nav class="navBar">
+          <div class="logoDiv">
+            <a href="/" id="logo">
+              <h3 class="logotext">NEWSAREA</h3>
+            </a>
+            <img class="logo" src="" alt="" />
+          </div>
+          <ul class="midNavBar">
+            <a class="commonMidNav" href="#home">HOME</a>
+            <a class="commonMidNav" href="#feeds">FEEDS</a>
+            <a class="commonMidNav" href="#about">ABOUT</a>
+            <a class="commonMidNav" href="#contacts">CONTACT</a>
+          </ul>
+          <form action="" method="get" accept-charset="utf-8">
+            <button class="login" type="submit">Log In</button>
+            <button class="signup" type="submit">Sign Up</button>
+          </form>
+        </nav>
+        <div class="secondDiv">
+          <h2>YOU CAN READ NEWS HERE</h2>
+          <p>Get the latest news from politics, entertainment, sports and other news headlines.</p>
+          <form class="searchBar" action="/searched" method="POST">
+            <input type="text" id="submit" placeholder=" Search..." name="query">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </header>
+      <div class="newsFeeds" id="feeds">
+        <h1 class="newsFeedText">NEWS <span>FEEDS</span></h1>
+        <div class="newsBlocks">
+          <% if(!obj||obj.length===0){ %>
+            <h1 style="padding-left:40%;padding-top: 13%;">No results found</h1>
+            <% } else {%>
+              <% for(let i=0;i < obj.length&&i < 9 ; i++){ %>
+                <div class="commonNews card1">
+                  <div class="extraDiv">
+                    <img class="newsImage" src="<%= obj[i].media %>" alt="" />
+                  </div>
+                  <a href="<%= obj[i].link %>">
+                    <p class="newsHeading">
+                      <%= obj[i].title %>... (<%= new Date(Date.parse(obj[i].published_date)).toLocaleDateString('en-GB')
+                          %>)
+                    </p>
+                  </a>
+                </div>
+                <% } }%>
+        </div>
+         
+         <div class="aboutDiv" id="about"> 
+           <img src="aboutImage3.jpg" alt="" /> <section>
+           <h1>ABOUT</h1> 
+           <p>Welcome to NewsArea, created by Narendra Kuldiya, a Computer Engineering student at DTU. We deliver timely and accurate news on various topics, including technology, entertainment, sports, and more. Our goal is to keep you informed with well-researched and reliable updates. Thank you for choosing us as your source of information.</p>
+           </section> 
+         </div>
+       </div>  
+       
+       <footer class="footerDiv" id="contacts">
+       <div class="feedback"> 
+       <p>Anything that can be improved?</p>
+       <form action="/" method="get" accept-charset="utf-8">
+         <input type="text" name=""  placeholder=" Email..." /> 
+         <textarea name="" placeholder=" Write your message..."></textarea>
+         <button type="submit">Submit</button>
+       </form>
+      </div>  
+      <div class="icons"> 
+      <i class="fab fa-facebook-f"></i> 
+      <span>|</span>
+      <i class="fab fa-twitter"></i> 
+      <span>|</span>
+        <i class="fab fa-instagram"></i>  
+        <span>| </span>
+        <i class="far fa-envelope"></i> 
+      </div>
+      <p class="copyrightPara">@Copyright 2021 Newsarea</p>
+    </footer>
+      
+    
+    </div>  
+    
+    
+    
+    
+    
+    
+    
+    <!-- bootstrap-->
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+    
+      
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.js"></script>
+      
+   <script  src="Notifyme.js" charset="utf-8"></script>
+  </body>
+</html>
