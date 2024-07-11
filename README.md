@@ -1,7 +1,6 @@
 # NewsArea.github.io
 <h3>YOU CAN READ NEWS HERE</h3>
 Get the latest news from politics, entertainment, sports and other news headlines.
-<h3>LINK : https://mynewsarea.herokuapp.com/</h3>
 
 <h4>Some screenshots : </h4>
 
