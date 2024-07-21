@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="" content="">
-    <title>Notifyme</title> 
+    <title>Notifyme</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">  
      
         <script
@@ -31,9 +31,14 @@
             <a class="commonMidNav" href="#contacts">CONTACT</a>
           </ul>
           <form action="" method="get" accept-charset="utf-8">
-            <button class="login" type="submit">Log In</button>
-            <button class="signup" type="submit">Sign Up</button>
+            <% if (user) { %>
+              <button class="login" type="submit" formaction="/logout" formmethod="post">Log Out</button>
+            <% } else { %>
+              <button class="login" type="submit" formaction="/login">Log In</button>
+              <button class="signup" type="submit" formaction="/register">Sign Up</button>
+            <% } %>
           </form>
+          
         </nav>
         <div class="secondDiv">
           <h2>YOU CAN READ NEWS HERE</h2>
@@ -65,55 +70,60 @@
                 <% } }%>
         </div>
          
-         <div class="aboutDiv" id="about"> 
+         <div class="aboutDiv" id="about">
            <img src="aboutImage3.jpg" alt="" /> <section>
-           <h1>ABOUT</h1> 
+           <h1>ABOUT</h1>
            <p>Welcome to NewsArea, created by Narendra Kuldiya, a Computer Engineering student at DTU. We deliver timely and accurate news on various topics, including technology, entertainment, sports, and more. Our goal is to keep you informed with well-researched and reliable updates. Thank you for choosing us as your source of information.</p>
-           </section> 
+           </section>
          </div>
        </div>  
        
        <footer class="footerDiv" id="contacts">
-       <div class="feedback"> 
+       <div class="feedback">
        <p>Anything that can be improved?</p>
        <form action="/" method="get" accept-charset="utf-8">
-         <input type="text" name=""  placeholder=" Email..." /> 
+         <input type="text" name=""  placeholder=" Email..." />
          <textarea name="" placeholder=" Write your message..."></textarea>
          <button type="submit">Submit</button>
        </form>
       </div>  
-      <div class="icons"> 
-      <i class="fab fa-facebook-f"></i> 
+      <div class="icons">
+      <i class="fab fa-facebook-f"></i>
       <span>|</span>
-      <i class="fab fa-twitter"></i> 
+      <i class="fab fa-twitter"></i>
       <span>|</span>
         <i class="fab fa-instagram"></i>  
         <span>| </span>
-        <i class="far fa-envelope"></i> 
+        <i class="far fa-envelope"></i>
       </div>
       <p class="copyrightPara">@Copyright 2021 Newsarea</p>
     </footer>
-      
-    
+     
+   
     </div>  
-    
-    
-    
-    
-    
-    
-    
+   
+   
+   
+   
+   
+   
+   
     <!-- bootstrap-->
-    
+   
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
-    
-      
-    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
-    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   
+     
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.js"></script>
-      
+     
    <script  src="Notifyme.js" charset="utf-8"></script>
   </body>
 </html>
+
+
+
+
+

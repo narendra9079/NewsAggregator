@@ -1,0 +1,9 @@
+<form action="" method="get" accept-charset="utf-8">
+    <% if (user) { %>
+      <button class="login" type="submit" formaction="/logout" formmethod="post">Log Out</button>
+    <% } else { %>
+      <button class="login" type="submit" formaction="/login">Log In</button>
+      <button class="signup" type="submit" formaction="/register">Sign Up</button>
+    <% } %>
+  </form>
+  

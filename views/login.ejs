@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+</head>
+<body>
+    
+    <% if (errormessage) { %>
+        <h1 id='loginerror'><%= errormessage %></h1>
+    <% } %>
+        
+    <% if (successmessage) { %>
+        <h1 id='loginsuccess'><%= successmessage %></h1>
+    <% } %>
+      
+  <h1>Login</h1>
+  <form action="/login" method="post">
+    <div>
+      <label for="email">Email:</label>
+      <input type="text" name="email" id="email">
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password">
+    </div>
+    <button type="submit">Login</button>
+  </form>
+</body>
+</html>
